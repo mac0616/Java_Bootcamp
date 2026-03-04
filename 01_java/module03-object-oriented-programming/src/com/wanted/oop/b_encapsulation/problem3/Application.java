@@ -20,7 +20,6 @@ public class Application {
         Monster monster2 = new Monster();
         monster2.setName("갸라도스");
         monster2.setHP(-200);
-
         monster2.getInfo();
         /* comment. 문제 상황 발생!!
         *   검증되지 않은 값을 넣을 때 문제가 발생 할 수 있다.
@@ -31,7 +30,6 @@ public class Application {
         Monster monster3 = new Monster();
         monster3.setName("피카츄");
         monster3.setHP(-500);
-
         monster3.getInfo();
 
         /* comment. 이제 거의 문제가 해결됐다.
@@ -39,9 +37,9 @@ public class Application {
         *   여전히 필드에 접근할 수 있다는 것이다.
         *  */
 
-        monster3.hp = -5500;
+//        monster3.hp = -5500;
         monster3.getInfo();
-        
+        //System.out.println(monster3.getInfo());
     }
     
 }

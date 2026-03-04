@@ -11,8 +11,6 @@ public class Monster {
     private String kinds;
     private int hp;
 
-
-
     public void setHP(int hp){
         if (hp > 0) {
             System.out.println("정상적인 값입니다. 몬스터 체력을 " + hp + "로 설정합니다.");
@@ -32,8 +30,8 @@ public class Monster {
         this.kinds = name;
     }
 
-    public String getInfo(){
-        return "몬스터의 이름은 " + this.kinds + " 이고, 체력은 " + this.hp + "입니다.";
+    public String getInfo(){    // 메소드
+        return "몬스터의 이름은 " + this.kinds + " 이고, 체력은 " + this.hp + "입니다.";   // 이 자체는 string
     }
 
 }

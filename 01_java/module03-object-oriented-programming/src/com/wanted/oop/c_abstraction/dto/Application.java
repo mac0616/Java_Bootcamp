@@ -21,7 +21,6 @@ public class Application {
         member.setNo(1);
         member.setName("LCY");
         member.setAge(20);
-
         System.out.println(member.getNo());
         System.out.println(member.getName());
         System.out.println(member.getAge());

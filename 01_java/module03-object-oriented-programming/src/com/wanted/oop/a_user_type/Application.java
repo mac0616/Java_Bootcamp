@@ -5,7 +5,7 @@ public class Application {
     public static void main(String[] args) {
 
         /* comment.
-        *   지금까지 우리는 JAva 에서 제공하는 자려를 취급사는 자료형에 대해서 알아보았다.
+        *   지금까지 우리는 Java 에서 제공하는 자료를 취급하는 자료형에 대해서 알아보았다.
         *   - 회원 정보를 관리하는 시뮬레이션 진행
         *   - 회원 : 아이디, 패스워드, 이름, 나이, 성별, 취미
         * */
@@ -31,10 +31,12 @@ public class Application {
 
         /* comment.
         *   위처럼, 이렇게 각각의 변수로 관리를 하게 된다면 여러 단점이 존재한다.
-        *   1. 변수명을 다 관리해야 하는 어려우이 생긴다.
+        *   1. 변수명을 다 관리해야 하는 어려움이 생긴다.
         *   2. 모든 회원 정보를 인자로 메소드를 호출 시 값을 전달해야 한다면
         *      너무 많은 값들을 인자로 전달해야 한기 때문에 한 눈에 안 들어온다.
+        *      ex) public void (int a, int b......){}
         *   3. 리턴구문은 항상 1개의 값만 가능하기 때문에 회원 정보를 묶어서 return 할 수 없다.
+        *      ex) return a, b;는 불가능. return a;이렇게 값 1개만 가능.
         * */
 
         /* comment. 위 단점들을 극복하기 위해 사용자 정의의 자료형이 나왔다.
@@ -52,7 +54,7 @@ public class Application {
         /* 멤버가 가진 값에 접근하기 위해서는 인스턴스변수명.필드명
         *   여기서 . 은 참조연산자로서 레퍼런스 변수가 참조하고 있는 주소에 접근하겠다는 의미이다.
         * */
-        System.out.println("member 가 가진 이름 : " + member.name);
+        System.out.println("member 가 가진 이름 : " + member.name);  // heap은 빈 값 불가능. null, 0 값이 들어감.
         System.out.println("member 가 가진 나이 : " + member.age);
 
         // 필드에 접근해서 값을 초기화

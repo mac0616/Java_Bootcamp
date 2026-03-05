@@ -3,7 +3,7 @@ package com.wanted.polymorphism.b_interface;
 public interface InterfaceProduct {
 
     /* comment.
-    *   인터페이스는 구현부가 있는 메소드를 작성할 수 없다.
+    *   인터페이스는 구현부(= {})가 있는 메소드를 작성할 수 없다.
     *   또한 생성자 역시 가질 수 없다.
     *  */
 
@@ -16,7 +16,7 @@ public interface InterfaceProduct {
     void methodA();
 
     static void staticMethod() {
-        // static 메소드는 구현부 작성이 가능하다. (But, 이렇게 잘 사용 X)
+        // static 메소드는 구현부 작성이 가능하다. (But, 이렇게 잘 사용하지 X)
     }
 
 }

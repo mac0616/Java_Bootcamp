@@ -4,9 +4,12 @@ public class FinalFieldTest {
 
     /* comment. final
     *   final 변경 불가의 의미를 갖는다(종단)
-    *   따라서 초기 인스턴스가 생성되고나면 기본값인 0이(int) 들어가는데
+    *   따라서 초기 인스턴스가 생성되고나면 기본값인 0이(int = 0, String = null..) 들어가는데
     *   초기화 이후에 값을 변경할 수 없기 때문에 선언과 동시에 초기화를 해야 한다.
     * */
+
+    // final 변수와 일반 변수를 구분하기 위해 final 변수는 변수명을 대문자로 작성함.
+
 //    private final int NON_STATIC_NUM;     // 초기화하지 않아 에러.
     // 1. final 키워드는 선언과 동시에 초기화 해야한다.
     private final int NON_STATIC_NUM = 1;

@@ -1,0 +1,25 @@
+- 기능
+입력받아서.
+Application에서 Calculator 클래스 메소드를 불러와 실행.
+Calculator 는 메인 메소드 사용금지.
+매개변수 (int a, int b)
++ - * / -> 메소드로 구현
+
+1. 입력받기
+2. Application에서 Calculator 클래스 불러오기
+3. + (plus)메소드 & 동작까지
+4. - (minus)메소드 & 동작까지
+5. * (times)메소드 & 동작까지
+6. / (division)메소드 & 동작까지
+
+=======================
+int[] array1 = {1, 2, 3, 7, 9}
+매개변수 (int[] array1)
+1. (반환값: double) 합계
+2. (반환값: double)평균(합계, 배열을 매개변수로 받아서)
+3. 최댓값
+
+
+
+
+

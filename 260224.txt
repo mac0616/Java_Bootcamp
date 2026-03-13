@@ -1,0 +1,51 @@
+cmd 창에서 사용자 설정
+git config --global user.name “사용자 이름” -- 사용자 이름은 영문 소문자로 작성 권장
+git config --global user.email “사용자 이메일” -- 사용자 이메일은 자주 사용하는 gmail 작성 권장
+설정 확인 : $ git config --list
+바탕화면에 폴더 만들기
+
+폴더 안에서 배쉬 창 켜기(다 배쉬창에서 입력)
+git init
+git status
+폴더 안에 파일 만들기
+git add a.txt (언트랙티드에서 벗어남)
+git status
+git add . (모든 파일 선택)
+git commit -m "a modify"
+git log --oneline
+git add .
+git status
+
+github 로그인 리포지토리 생성
+git remote add origin 깃허브리포지토리
+
+올라온 파일 수정하거나 새로 생성 후 
+git fetch(원격 수정사항 반영)
+git merge(수정사항 반영한 거 눈에 보이게)
+
+올라온 파일 수정하거나 새로 생성 후 
+git pull
+
+c.txt를 원격에서 수정 후 저장, 로컬에서도 수정 후 저장
+git pull -> 에러.
+
+에러 수정하기 (am = add + message)
+git commit -am 'update c.txt'
+
+branch만들어서 이동하는 방법으로 에러 수정 이어서
+git branch modify (modify라는 브랜치 만들기)
+git checkout modify (master에서 modify로 이동)
+git push
+
+
+-----------
+403: 깃허브 접근권한
+
+git pull origin 이전사람 브랜치명
+git branch 새브랜치명(나: feature/C-minutes-add)
+git checkout 새브랜치명
+파일 만들거나 수정하고
+git add .
+git status
+git commit -m '뭘했니'
+git push origin 새브랜치명

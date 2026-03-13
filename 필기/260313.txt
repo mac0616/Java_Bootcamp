@@ -1,0 +1,28 @@
+- JDBCTemplate.java = DB연결을 위한 커넥션 작성
+- Application 생성
+
+- [google] - [maven repository] search - mysql 검색 - mysql connecter 버전 선택 - gradle 복사 -  intellj - build.gradle에 붙여넣기 - 코끼리 클릭
+=> hikari cp도 동일한 방법으로 진행 (https://mvnrepository.com/artifact/com.zaxxer/HikariCP)
+
+- [resurces] 밑에 db-info.properties 생성
+
+- JDBCTemplate & Application 세팅
+
+- couse 안 파일들에 .java 파일 생성
+
+- Application 마져 작성 (문서화 주석)
+
+(요청시) Application -> CouseInputView -> CourseController -> CourseService  -> CourseDAO -> MySQL(RDBMS)
+response 시(응답 시) : 역순이다. 다만 CourseOutView 를 통해 결과물을 보여줄 것이다.
++ 데이터에 접근할 수 있는건 DAO뿐. view에서 절대 데이터에 접근 할 수 없음.
++ 트랜잭션은 필요에 따라 Service에서 작성함.. (롤백해야 하니까)
+
+- 설정 완료 후 
+- maven repository - slf4j 검색 - slf4j simple provider 
+
+!! 반드시 공부할 것
+1. 생성자.
+2. 코드 따라가기
+
+
+

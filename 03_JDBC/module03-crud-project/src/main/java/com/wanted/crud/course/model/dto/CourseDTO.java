@@ -2,15 +2,15 @@ package com.wanted.crud.course.model.dto;
 
 public class CourseDTO {
 
-    private long courseId;
-    private long authorId;
+    private Long courseId;
+    private Long authorId;
     private String title;
     private String description;
     private String status;
 
-    public CourseDTO(){}
+    public CourseDTO() {}
 
-    public CourseDTO(long courseId, long authorId, String title, String description, String status) {
+    public CourseDTO(Long courseId, Long authorId, String title, String description, String status) {
         this.courseId = courseId;
         this.authorId = authorId;
         this.title = title;
@@ -18,19 +18,19 @@ public class CourseDTO {
         this.status = status;
     }
 
-    public long getCourseId() {
+    public Long getCourseId() {
         return courseId;
     }
 
-    public void setCourseId(long courseId) {
+    public void setCourseId(Long courseId) {
         this.courseId = courseId;
     }
 
-    public long getAuthorId() {
+    public Long getAuthorId() {
         return authorId;
     }
 
-    public void setAuthorId(long authorId) {
+    public void setAuthorId(Long authorId) {
         this.authorId = authorId;
     }
 
@@ -68,6 +68,4 @@ public class CourseDTO {
                 ", status='" + status + '\'' +
                 '}';
     }
-
 }
-

@@ -13,14 +13,15 @@ public class Application {
 
     public static void main(String[] args) {
         // JDBCTemplate에서 throw함 그래서 try-with-resource -> catch문으로
-        try (Connection con = JDBCTemplate.getConnection()) {
+        try (Connection con = JDBCTemplate.getConnection()) {   // 커넥션 생성.
 
             System.out.println("✅ 데이터베이스 연결 성공!!");
             JDBCTemplate.printConnectionStatus();
 
             /* comment.
-            *   Application -> CouseInputView -> CourseController -> CourseService
+            *   Application -> CourseInputView -> CourseController -> CourseService
             *   -> CourseDAO -> MySQL(RDBMS)
+            *   [Application -> View -> Controller -> Service -> DAO -> DB]
             *   response 시(응답 시) : 역순이다. 다만 CourseOutView 를 통해 결과물을 보여줄 것이다.
             *   + 데이터에 접근할 수 있는건 DAO뿐. view에서 절대 데이터에 접근 할 수 없음.
             *   + 트랜잭션은 필요에 따라 Service에서 작성함.. (롤백해야 하니까)
@@ -31,12 +32,12 @@ public class Application {
              * @deprecated 현재 아래에 작성될 코드는 나중에는 사라지는 코드
              * 객체 조립 진행
              * */
-            CourseService service = new CourseService(con);
-            CourseController controller = new CourseController(service);
-            CourseOutputView outputView = new CourseOutputView();
-            CourseInputView inputView = new CourseInputView(controller, outputView);
+            CourseService service = new CourseService(con);                             // 객체 조립. 서비스 생성. 커넥션 담음
+            CourseController controller = new CourseController(service);                // 객체 조립. 컨틀롤러 생성. 서비스 담음
+            CourseOutputView outputView = new CourseOutputView();                       // 객체 조립.
+            CourseInputView inputView = new CourseInputView(controller, outputView);    // 객체 조립. 컨트롤러, 아웃풋뷰 가지고 있음.(호출할 수 있음)
 
-            /* Application 이 실행되면 View 메소드 호출한다. */
+            /* Application 이 실행되면 View 메소드 호출한다. */     // 메인화면 불러옴.
             inputView.displayMainMenu();
 
         } catch (SQLException e) {

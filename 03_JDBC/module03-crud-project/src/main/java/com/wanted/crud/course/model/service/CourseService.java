@@ -3,6 +3,8 @@ package com.wanted.crud.course.model.service;
 import com.wanted.crud.course.model.dao.CourseDAO;
 import com.wanted.crud.course.model.dao.CourseSectionDAO;
 import com.wanted.crud.course.model.dto.CourseDTO;
+import com.wanted.crud.course.model.dto.CourseSectionDTO;
+import com.wanted.crud.course.model.dto.SectionDTO;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -45,4 +47,99 @@ public class CourseService {
         }
     }
 
+    public Long saveCourse(CourseDTO newCourse) {
+    // save를 throw 해둠. 그래서 try-catch로 감쌈.
+        try {
+            return courseDAO.save(newCourse);
+        } catch (SQLException e) {
+            throw new RuntimeException("강좌 등록 중 Error 발생!!! 🚨");
+        }
+
+    }
+
+    public int deleteCourse(long id) {
+
+        try {
+            return courseDAO.delete(id);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public CourseDTO findById(long id){
+
+        try {
+            return courseDAO.find(id);
+        } catch (SQLException e) {
+            throw new RuntimeException("강좌 상세 조회 중 오류 발생!! 🚨");
+        }
+    }
+
+    public CourseSectionDTO findCourseWithSections(long courseId) {
+        try {
+            return courseDAO.findCourseWithSections(courseId);
+        } catch (SQLException e) {
+            throw new RuntimeException("강좌 섹션 Join 중 에러 발생!! 🚨");
+        }
+    }
+
+    public boolean createCourseWithDefaultSection(CourseDTO newCourse, SectionDTO newSection) {
+
+        /* comment.
+        *   courses 테이블에 강의를 insert
+        *   course_sections 테이블에 섹션 insert
+        * */
+
+        try {
+            /* setAutoCommit 을 끄는 이유는 2개의 작업 중 1개라도 오류가 나면 우리가 직접 rollback 시키기 위함.
+            *  또한 2개의 작업이 정상적으로 마무리 되면 직접 commit 하기 위함.
+            *  */
+            connection.setAutoCommit(false);
+
+            // 메소드란? 하나의 작업을 묶어둔 코드 덩어리
+            // 따라서 우리는 필요함에 있어 재호출을 통해 공통적인 작업을 효과적으로 수행할 수 있다.
+
+            // 이전에 만들어두었던, 강의 등록 메서드 재활용
+            // generatedCourseId = 강의 등록 시 생성된 PK 값이 들어있다.
+            Long generatedCourseId = courseDAO.save(newCourse); // 부모(강좌)를 먼저 대입함
+
+            if (generatedCourseId == null){
+                throw new SQLException("🚨 강좌 ID 생성에 실패했습니다!!");
+            }
+
+            // newSection 객체의 CourseId는 null 이다.
+            // 하지만, 위쪽에서 코스를 등록하며 발생한 PK를 알았기 때문에
+            // 해당 courseId 를 newSection 객체의 courseId 필드에 넣을 것이다.
+            newSection.setCourseId(generatedCourseId);
+            // 부모가 가진 키값으로 자식도 넣음.
+            // insert 성공적으로 수행되면, result 변수에 1이 담김.
+            int result = courseSectionDAO.save(newSection);
+
+            if (result == 0){
+                throw new SQLException("섹션 생성에 실패!");
+            }
+
+            // 위쪽의 2개의 논리적 작업이 잘 수행되면 commit()
+            connection.commit();
+            return true;
+
+        } catch (SQLException e) {
+            /* try 구문에서 Error 가 발생하면, catch 구문으로 넘어온다.
+            *  즉, 우리는 try 구문 내에서 에러가 발생하면, catch 구문에서 connection 을 rollback 할 것이다.
+            * */
+            try {
+                connection.rollback();
+            } catch (SQLException ex) {
+                throw new RuntimeException("rollback 중 에러 발생!" + ex);
+            }
+            return false;
+        }  finally {
+            try {
+                connection.setAutoCommit(true);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+    }
 }

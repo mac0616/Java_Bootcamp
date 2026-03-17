@@ -22,6 +22,7 @@ public class Application {
             *   Application -> CourseInputView -> CourseController -> CourseService
             *   -> CourseDAO -> MySQL(RDBMS)
             *   [Application -> View -> Controller -> Service -> DAO -> DB]
+            *   역순 : [DB -> DAO -> Service -> Controller -> inputView -> outputView]
             *   response 시(응답 시) : 역순이다. 다만 CourseOutView 를 통해 결과물을 보여줄 것이다.
             *   + 데이터에 접근할 수 있는건 DAO뿐. view에서 절대 데이터에 접근 할 수 없음.
             *   + 트랜잭션은 필요에 따라 Service에서 작성함.. (롤백해야 하니까)

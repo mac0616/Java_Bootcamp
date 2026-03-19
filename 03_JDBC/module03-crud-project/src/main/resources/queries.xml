@@ -10,7 +10,6 @@
     <query key="course.save">
         insert into courses (author_id, title, description, status)
         values(?, ?, ?, ?)
-
     </query>
 
     <query key="course.delete">

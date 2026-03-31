@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d84024cf-3b32-4788-8da7-dafa8c11b42d" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_launcher_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_3_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_3_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_3_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_3_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_3_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_3_39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module01-IoC-container.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module01-IoC-container.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module02-dependency-injection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module02-dependency-injection/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="645a7811-8b86-48e0-bda4-a2e72bd6c48b" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/../../04_Servlet/module01-servlet/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Servlet/module01-servlet/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_Servlet/module01-servlet/src/main/java/com/wanted/servlet/a_lifcycle/LifeCycleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Servlet/module01-servlet/src/main/java/com/wanted/servlet/a_lifcycle/LifeCycleServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_Servlet/module01-servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Servlet/module01-servlet/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_Servlet/module01-servlet/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Servlet/module01-servlet/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +19,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="module01-IoC-container" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,9 +49,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="3BgnI0voe9kGVIJzwRXIW4OxJGy" />
+  <component name="ProjectId" id="3BgoVMergGnGzogXNLIZg6rb2zq" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -62,20 +64,24 @@
     "Gradle.module01-IoC-container [:com.wanted.container.section02.Application.main()].executor": "Run",
     "Gradle.module01-IoC-container [:com.wanted.container.section03.Application.main()].executor": "Run",
     "Gradle.module01-IoC-container [:com.wanted.container.section04.Application.main()].executor": "Run",
-    "Gradle.소스 다운로드.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Lecture/05_Spring-Core/module01-IoC-container",
+    "last_opened_file_path": "C:/Lecture/05_Spring-Core/module01-IoC-container/src/main/java/com/wanted/container/section04",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.wanted.container.section01.service" />
+      <recent name="com.wanted.section01.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Lecture\05_Spring-Core\module01-IoC-container\src\main\java\com\wanted\container\section04" />
@@ -93,13 +99,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="d84024cf-3b32-4788-8da7-dafa8c11b42d" name="변경" comment="" />
-      <created>1774919499889</created>
+      <changelist id="645a7811-8b86-48e0-bda4-a2e72bd6c48b" name="변경" comment="" />
+      <created>1774920131667</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1774919499889</updated>
-      <workItem from="1774919501183" duration="12638000" />
-      <workItem from="1774942424555" duration="127000" />
+      <updated>1774920131667</updated>
+      <workItem from="1774920135749" duration="141000" />
+      <workItem from="1774920297260" duration="11508000" />
     </task>
     <servers />
   </component>

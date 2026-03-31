@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65121118-7ee4-4996-9bb0-d7957a9edbc9" name="변경" comment="" />
+    <list default="true" id="65121118-7ee4-4996-9bb0-d7957a9edbc9" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_platform_junit_platform_launcher_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_aop_5_3_39.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_beans_5_3_39.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_context_5_3_39.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_core_5_3_39.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_expression_5_3_39.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_jcl_5_3_39.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module01-IoC-container/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module01-IoC-container/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/module01-IoC-container.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../module01-IoC-container/module01-IoC-container.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,9 +62,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3BhJGNDm6kCW6gWaprkuWzFu4Uv" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -63,7 +83,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "LCY",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Lecture/05_Spring-Core/module02-dependency-injection/src/main/java/com/wanted/di/section02",
+    "last_opened_file_path": "C:/Lecture/05_Spring-Core/module02-dependency-injection",
     "project.structure.last.edited": "프로젝트",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -94,7 +114,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774935273519</updated>
-      <workItem from="1774935274919" duration="5979000" />
+      <workItem from="1774935274919" duration="6156000" />
+      <workItem from="1774942407395" duration="15000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,410 @@
+Index: .idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml b/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.opentest4j:opentest4j:1.3.0" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.opentest4j" artifactId="opentest4j" version="1.3.0" baseVersion="1.3.0" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e/opentest4j-1.3.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml b/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.junit.platform:junit-platform-commons:1.10.0" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.junit.platform" artifactId="junit-platform-commons" version="1.10.0" baseVersion="1.10.0" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.10.0/d533ff2c286eaf963566f92baf5f8a06628d2609/junit-platform-commons-1.10.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_springframework_spring_core_5_3_39.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_springframework_spring_core_5_3_39.xml b/.idea/libraries/Gradle__org_springframework_spring_core_5_3_39.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_springframework_spring_core_5_3_39.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.springframework:spring-core:5.3.39" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.springframework" artifactId="spring-core" version="5.3.39" baseVersion="5.3.39" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.39/d2bff2eedf27b51d6ef9a2fc892aaff5b7a768dd/spring-core-5.3.39.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_springframework_spring_aop_5_3_39.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_springframework_spring_aop_5_3_39.xml b/.idea/libraries/Gradle__org_springframework_spring_aop_5_3_39.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_springframework_spring_aop_5_3_39.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.springframework:spring-aop:5.3.39" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.springframework" artifactId="spring-aop" version="5.3.39" baseVersion="5.3.39" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.39/3af1f0d73ec1e031c7083c848342989f413ca275/spring-aop-5.3.39.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml b/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.apiguardian:apiguardian-api:1.1.2" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.apiguardian" artifactId="apiguardian-api" version="1.1.2" baseVersion="1.1.2" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_springframework_spring_context_5_3_39.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_springframework_spring_context_5_3_39.xml b/.idea/libraries/Gradle__org_springframework_spring_context_5_3_39.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_springframework_spring_context_5_3_39.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.springframework:spring-context:5.3.39" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.springframework" artifactId="spring-context" version="5.3.39" baseVersion="5.3.39" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.39/286538ca4b3890192d63c88fdd1616adde17dc0e/spring-context-5.3.39.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.39/507f6faa84b0241df1caebb211e835180bbc0384/spring-context-5.3.39-sources.jar!/" />
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.39/507f6faa84b0241df1caebb211e835180bbc0384/spring-context-5.3.39-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml b/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.junit.platform:junit-platform-engine:1.10.0" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.junit.platform" artifactId="junit-platform-engine" version="1.10.0" baseVersion="1.10.0" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.10.0/276c4edcf64fabb5a139fa7b4f99330d7a93b804/junit-platform-engine-1.10.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml b/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.10.0" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.junit.jupiter" artifactId="junit-jupiter-engine" version="5.10.0" baseVersion="5.10.0" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.10.0/90587932d718fc51a48112d33045a18476c542ad/junit-jupiter-engine-5.10.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml b/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.junit.jupiter:junit-jupiter:5.10.0" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.junit.jupiter" artifactId="junit-jupiter" version="5.10.0" baseVersion="5.10.0" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.10.0/8fea1d9c58b2156f1b998f2f18da04bc9e087f74/junit-jupiter-5.10.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_springframework_spring_beans_5_3_39.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_springframework_spring_beans_5_3_39.xml b/.idea/libraries/Gradle__org_springframework_spring_beans_5_3_39.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_springframework_spring_beans_5_3_39.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.springframework:spring-beans:5.3.39" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.springframework" artifactId="spring-beans" version="5.3.39" baseVersion="5.3.39" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.39/87770ce736cbd777c07866cbc8a06b879765e3c8/spring-beans-5.3.39.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.39/d8b003c2c8549ae9cc342c23a46a46f0732a4516/spring-beans-5.3.39-sources.jar!/" />
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.39/d8b003c2c8549ae9cc342c23a46a46f0732a4516/spring-beans-5.3.39-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_springframework_spring_jcl_5_3_39.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_springframework_spring_jcl_5_3_39.xml b/.idea/libraries/Gradle__org_springframework_spring_jcl_5_3_39.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_springframework_spring_jcl_5_3_39.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.springframework:spring-jcl:5.3.39" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.springframework" artifactId="spring-jcl" version="5.3.39" baseVersion="5.3.39" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.39/45181955845ae69c51c72746f00200f7babca558/spring-jcl-5.3.39.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_platform_junit_platform_launcher_1_10_0.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_platform_junit_platform_launcher_1_10_0.xml b/.idea/libraries/Gradle__org_junit_platform_junit_platform_launcher_1_10_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_junit_platform_junit_platform_launcher_1_10_0.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.junit.platform:junit-platform-launcher:1.10.0" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.junit.platform" artifactId="junit-platform-launcher" version="1.10.0" baseVersion="1.10.0" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/1.10.0/89a1922534ed102be1fb2a8c0b2c6151297a12bf/junit-platform-launcher-1.10.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml b/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.junit.jupiter:junit-jupiter-api:5.10.0" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.junit.jupiter" artifactId="junit-jupiter-api" version="5.10.0" baseVersion="5.10.0" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.10.0/2fe4ba3d31d5067878e468c96aa039005a9134d3/junit-jupiter-api-5.10.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml b/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.junit.jupiter:junit-jupiter-params:5.10.0" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.junit.jupiter" artifactId="junit-jupiter-params" version="5.10.0" baseVersion="5.10.0" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.10.0/9041c7365495a897a64782ea5a6fdb99dab1814e/junit-jupiter-params-5.10.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Gradle__org_springframework_spring_expression_5_3_39.xml
+===================================================================
+diff --git a/.idea/libraries/Gradle__org_springframework_spring_expression_5_3_39.xml b/.idea/libraries/Gradle__org_springframework_spring_expression_5_3_39.xml
+deleted file mode 100644
+--- a/.idea/libraries/Gradle__org_springframework_spring_expression_5_3_39.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ /dev/null	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
+@@ -1,10 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Gradle: org.springframework:spring-expression:5.3.39" type="java-imported" external-system-id="GRADLE">
+-    <properties groupId="org.springframework" artifactId="spring-expression" version="5.3.39" baseVersion="5.3.39" />
+-    <CLASSES>
+-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.39/25cf07399eb7ac3fc13888b20dc4d67124ec75bd/spring-expression-5.3.39.jar!/" />
+-    </CLASSES>
+-    <JAVADOC />
+-    <SOURCES />
+-  </library>
+-</component>
+\ No newline at end of file
+Index: ../module02-dependency-injection/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"65121118-7ee4-4996-9bb0-d7957a9edbc9\" name=\"변경\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand>\r\n              <path>\r\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\r\n                <item name=\"module02-dependency-injection\" type=\"f1a62948:ProjectNode\" />\r\n              </path>\r\n            </expand>\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 7\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"3BhJGNDm6kCW6gWaprkuWzFu4Uv\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"Gradle.module02-dependency-injection [:com.wanted.di.section01.Application.main()].executor\": \"Run\",\r\n    \"Gradle.module02-dependency-injection [:com.wanted.di.section02.Application.main()].executor\": \"Run\",\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\r\n    \"git-widget-placeholder\": \"LCY\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Lecture/05_Spring-Core/module02-dependency-injection/src/main/java/com/wanted/di/section02\",\r\n    \"project.structure.last.edited\": \"프로젝트\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Lecture\\05_Spring-Core\\module02-dependency-injection\\src\\main\\java\\com\\wanted\\di\\section02\" />\r\n      <recent name=\"C:\\Lecture\\05_Spring-Core\\module02-dependency-injection\\src\\main\\java\\com\\wanted\\di\\section01\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.wanted.di.section02.gateway\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"디폴트 작업\">\r\n      <changelist id=\"65121118-7ee4-4996-9bb0-d7957a9edbc9\" name=\"변경\" comment=\"\" />\r\n      <created>1774935273519</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1774935273519</updated>\r\n      <workItem from=\"1774935274919\" duration=\"5979000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../module02-dependency-injection/.idea/workspace.xml b/../module02-dependency-injection/.idea/workspace.xml
+--- a/../module02-dependency-injection/.idea/workspace.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ b/../module02-dependency-injection/.idea/workspace.xml	(date 1774942422293)
+@@ -4,7 +4,27 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="65121118-7ee4-4996-9bb0-d7957a9edbc9" name="변경" comment="" />
++    <list default="true" id="65121118-7ee4-4996-9bb0-d7957a9edbc9" name="변경" comment="">
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_junit_platform_junit_platform_launcher_1_10_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_aop_5_3_39.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_beans_5_3_39.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_context_5_3_39.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_core_5_3_39.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_expression_5_3_39.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/libraries/Gradle__org_springframework_spring_jcl_5_3_39.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module01-IoC-container/.idea/modules.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module01-IoC-container/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../module01-IoC-container/module01-IoC-container.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../module01-IoC-container/module01-IoC-container.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -42,9 +62,9 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 7
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 7
++}</component>
+   <component name="ProjectId" id="3BhJGNDm6kCW6gWaprkuWzFu4Uv" />
+   <component name="ProjectLevelVcsManager">
+     <ConfirmationsSetting value="1" id="Add" />
+@@ -63,7 +83,7 @@
+     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+     "git-widget-placeholder": "LCY",
+     "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Lecture/05_Spring-Core/module02-dependency-injection/src/main/java/com/wanted/di/section02",
++    "last_opened_file_path": "C:/Lecture/05_Spring-Core/module02-dependency-injection",
+     "project.structure.last.edited": "프로젝트",
+     "project.structure.proportion": "0.0",
+     "project.structure.side.proportion": "0.0",
+@@ -94,7 +114,8 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1774935273519</updated>
+-      <workItem from="1774935274919" duration="5979000" />
++      <workItem from="1774935274919" duration="6156000" />
++      <workItem from="1774942407395" duration="15000" />
+     </task>
+     <servers />
+   </component>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d84024cf-3b32-4788-8da7-dafa8c11b42d\" name=\"변경\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"Interface\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 6\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"3BgnI0voe9kGVIJzwRXIW4OxJGy\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Gradle.module01-IoC-container [:com.wanted.container.section01.Application.main()].executor\": \"Run\",\r\n    \"Gradle.module01-IoC-container [:com.wanted.container.section02.Application.main()].executor\": \"Run\",\r\n    \"Gradle.module01-IoC-container [:com.wanted.container.section03.Application.main()].executor\": \"Run\",\r\n    \"Gradle.module01-IoC-container [:com.wanted.container.section04.Application.main()].executor\": \"Run\",\r\n    \"Gradle.소스 다운로드.executor\": \"Run\",\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\r\n    \"git-widget-placeholder\": \"LCY\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Lecture/05_Spring-Core/module01-IoC-container/src/main/java/com/wanted/container/section04\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateClassDialog.RecentsKey\">\r\n      <recent name=\"com.wanted.container.section01.service\" />\r\n    </key>\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Lecture\\05_Spring-Core\\module01-IoC-container\\src\\main\\java\\com\\wanted\\container\\section04\" />\r\n      <recent name=\"C:\\Lecture\\05_Spring-Core\\module01-IoC-container\\src\\main\\java\\com\\wanted\\container\\section03\" />\r\n      <recent name=\"C:\\Lecture\\05_Spring-Core\\module01-IoC-container\\src\\main\\java\\com\\wanted\\container\\section02\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"디폴트 작업\">\r\n      <changelist id=\"d84024cf-3b32-4788-8da7-dafa8c11b42d\" name=\"변경\" comment=\"\" />\r\n      <created>1774919499889</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1774919499889</updated>\r\n      <workItem from=\"1774919501183\" duration=\"12401000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ b/.idea/workspace.xml	(date 1774942406056)
+@@ -47,7 +47,6 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+-    "git-widget-placeholder": "LCY",
+     "kotlin-language-version-configured": "true",
+     "last_opened_file_path": "C:/Lecture/05_Spring-Core/module01-IoC-container/src/main/java/com/wanted/container/section04",
+     "vue.rearranger.settings.migration": "true"
+@@ -78,7 +77,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1774919499889</updated>
+-      <workItem from="1774919501183" duration="12401000" />
++      <workItem from="1774919501183" duration="12638000" />
+     </task>
+     <servers />
+   </component>
+Index: module01-IoC-container.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module external.linked.project.id=\"module01-IoC-container\" external.linked.project.path=\"$MODULE_DIR$\" external.root.project.path=\"$MODULE_DIR$\" external.system.id=\"GRADLE\" external.system.module.group=\"com.wanted\" external.system.module.version=\"1.0-SNAPSHOT\" type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/.gradle\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/build\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/module01-IoC-container.iml b/module01-IoC-container.iml
+--- a/module01-IoC-container.iml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ b/module01-IoC-container.iml	(date 1774942163397)
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module external.linked.project.id="module01-IoC-container" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="com.wanted" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
++<module external.linked.project.id="module01-IoC-container" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+   <component name="NewModuleRootManager" inherit-compiler-output="true">
+     <exclude-output />
+     <content url="file://$MODULE_DIR$">
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/module01-IoC-container.iml\" filepath=\"$PROJECT_DIR$/module01-IoC-container.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/modules/module01-IoC-container.main.iml\" filepath=\"$PROJECT_DIR$/.idea/modules/module01-IoC-container.main.iml\" />\r\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/modules/module01-IoC-container.test.iml\" filepath=\"$PROJECT_DIR$/.idea/modules/module01-IoC-container.test.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision 4f4a5b0319edb7059fd0bbef4886fadb0e363241)
++++ b/.idea/modules.xml	(date 1774942163410)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/module01-IoC-container.iml" filepath="$PROJECT_DIR$/module01-IoC-container.iml" />
++      <module fileurl="file://$PROJECT_DIR$/module01-IoC-container.iml" filepath="$PROJECT_DIR$/module01-IoC-container.iml" group="module01-IoC-container" />
+       <module fileurl="file://$PROJECT_DIR$/.idea/modules/module01-IoC-container.main.iml" filepath="$PROJECT_DIR$/.idea/modules/module01-IoC-container.main.iml" />
+       <module fileurl="file://$PROJECT_DIR$/.idea/modules/module01-IoC-container.test.iml" filepath="$PROJECT_DIR$/.idea/modules/module01-IoC-container.test.iml" />
+     </modules>

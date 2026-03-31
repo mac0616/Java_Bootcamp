@@ -9,7 +9,7 @@ public class NaverPayGateway implements PaymentInterface{
      * @return 결제 성공 여부 */
 
     public boolean processPayment(String orderId, double amount){
-        System.out.println("네이버페이로 결제 진행 시작 : 주문ID = " + orderId + ", 금액 = " + amount);
+        System.out.println("네이버페이로 결제 진행 시작 : 주문ID = \" + orderId + \", 금액 = " + amount);
         return true;
     }
 

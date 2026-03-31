@@ -9,7 +9,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        /* hi.
+        /* comment.
          *   AppConfig 파일에서 IoC 컨테이너가 관리하는 Bean 을 등록했었다.
          *   문제점.
          *   1. Bean 을 등록할 때 1개라도 실수로 누락한다면?

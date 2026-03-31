@@ -7,7 +7,7 @@ public class Application {
     public static void main(String[] args) {
         System.out.println("==========스프링 없이 객체를 직접 생성해서 사용==========");
 
-        /* hi. 결제 시스템이 있다고 가정을 해본다.
+        /* comment. 결제 시스템이 있다고 가정을 해본다.
          *   kakaoPay 와 NaverPay 가 있으며 Application에서는
          *   PaymentService 를 호출 시 결제 플랫폼 객체를 생성해서 결제가 되는 시나리오를 구성해본다.
          * */
@@ -20,7 +20,7 @@ public class Application {
         System.out.println("결제 결과 : " + (result ? "성공" : "실패"));
         System.out.println("=================================");
 
-        /* hi.
+        /* comment.
         *   결제 게이트웨이를 만약 Kakao -> Naver 바꾸면 어떻게 될까?
         *   문제점
         *   1. 결제 게이트웨이 구현체를 직접 변경해야 한다.

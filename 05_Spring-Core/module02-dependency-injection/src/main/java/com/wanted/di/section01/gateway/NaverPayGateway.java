@@ -1,6 +1,6 @@
 package com.wanted.di.section01.gateway;
 
-/* hi.
+/* comment.
 *   @Component 어노테이션
 *   - Spring 이 해당 클래스를 컴포넌트로 인식하여, Bean으로 등록할 수 있도록 지시.
 *   - 역할 : 일반적인 Bean을 정의하며, IoC 컨테이너가 관리할 객체임을 명시한다.

@@ -6,7 +6,7 @@ import com.wanted.container.section02.service.PaymentService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/* hi.
+/* comment.
 *   IoC 컨테이너에게 해당 클래스가 Bean(객체) 설정 정보가 가지고 있는
 *   설정 클래스임을 알려주는 어노테이션이다.
 *   해당 클래스 자체도 Bean 으로 등록되어 IoC 컨테이너에서 객체로 관리된다.
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-    /* hi.
+    /* comment.
     *   @Bean 어노테이션을 사용하게 되면, 컨테이너에서 관리되는 객체의 이름은
     *   메서드 명이 된다.
     *   컨테이너에서 관리되는 @Bean 은 싱글톤으로 관리되어

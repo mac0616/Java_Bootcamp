@@ -9,7 +9,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        /* hi.
+        /* comment.
          *   DI : 의존성 주입
          *  Spring IoC 컨테이너에서 객체간의 의존성을 개발자가 관리하지 않고,
          *  IoC 컨테이너가 자동으로 주입해주는 메커니즘.

@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class AppConfig {
 
-   /* hi.
+   /* comment.
    *   Spring Bean 의 생명주기 확인
    *    - 주요 단계
    *    1. 인스턴스 생성 : 컨테이너가 PaymentService 를 호출한다. (new 키워드 사용)

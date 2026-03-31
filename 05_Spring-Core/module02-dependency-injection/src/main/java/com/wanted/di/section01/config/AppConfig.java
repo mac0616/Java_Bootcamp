@@ -17,11 +17,12 @@ import org.springframework.context.annotation.FilterType;
 //                type = FilterType.REGEX, pattern = {"com.wanted.di.section01.service.*"}
         ))
 //@ComponentScan // 굳이 경로 지정하지 않아도 같은 폴더 안에 있으면 찾을 수 있음
+
 public class AppConfig {
 
-    /* hi.
+    /* comment.
     *   - 지정된 패키지에서 @Component 관련 어노테이션이 붙은 클래스를
-    *   - 스캔하여 Bean으로 등록할 수 있께 해준다.
+    *   - 스캔하여 Bean으로 등록할 수 있게 해준다.
     *   - 장점
     *   - 코드 간소화 : @Bean 으로 일일이 등록할 필요가 없어진다.
     *   - 유연성 : 새로운 컴포넌트 추가 시 설정 변경 없이 자동 인식.

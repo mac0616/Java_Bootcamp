@@ -10,7 +10,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        /* hi.
+        /* comment.
         *   Bean의 생명주기를 알면 좋은 이유!
         *   - 1. 리소스 관리 최적화
         *   - Bean 의 생성, 초기화, 소멸 단계를 알면 리소스(ex-DB연결, file 핸들링)를

@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
-/* hi.
+/* comment.
 *   IoC 컨테이너에게 해당 클래스가 Bean(객체) 설정 정보가 가지고 있는
 *   설정 클래스임을 알려주는 어노테이션이다.
 *   해당 클래스 자체도 Bean 으로 등록되어 IoC 컨테이너에서 객체로 관리된다.
@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class AppConfig {
 
-    /* hi.
+    /* comment.
     *   @Bean 의 Scope 확인하기.
     *   1. 싱글톤 스코프(singleton scope)
     *   - Spring default 설정이다. 객체(bean)은 컨테이너 내에서 단일 인스턴스이다.
@@ -32,7 +32,7 @@ public class AppConfig {
         return new PaymentService(naverPayGateway());
     }
 
-    /* hi.
+    /* comment.
     *   프로토타입 스코프(Prototype Scope)
     *   - 요청 시마다 새로운 인스턴스를 생성한다.
     *   - 각 요청이 독립적인 상태를 유지해야 할 때 사용되며, 상태를 가지는 객체(dto같은 애들)에 적합하다.

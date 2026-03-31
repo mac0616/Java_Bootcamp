@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Primary
 public class KakaoPayGateway implements PaymentInterface {
 
-    /* hi.
+    /* comment.
     *   @Primary 어노테이션은 동일한 타입의 Bean이 여러개일 때,
     *   기본으로 주입될 Bean을 지정할 수 있다.
     *  */

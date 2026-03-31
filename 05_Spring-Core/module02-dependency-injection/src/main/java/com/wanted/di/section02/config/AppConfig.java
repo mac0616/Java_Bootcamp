@@ -20,7 +20,7 @@ import org.springframework.context.annotation.Configuration;
 //@ComponentScan // 굳이 경로 지정하지 않아도 같은 폴더 안에 있으면 찾을 수 있음
 public class AppConfig {
 
-    /* hi.
+    /* comment.
     *   @Qualifier 어노테이션은 특정 Bean 을 이름으로 지정을 한다.
     *   @Primary 설정으로 default 값이 KakaoPay로 되어 있지만,
     *   @Qualifier 어노테이션은 우리가 명시적으로 Interface 의 구현체를

@@ -9,14 +9,14 @@ public class Application {
 
     public static void main(String[] args) {
 
-        /* hi.
+        /* comment.
         *   IoC Container (제어의 역전)
         *   section01 에서는 개발자가 직접 new 키워드를 사용해서 인스턴스를 생성했다.
         *   이렇게 되면, 객체 간 결합도가 높아지게 되며, 유연성이 떨어지고,
         *   테스트 및 유지보수가 어렵다는 문제가 발생하게 된다.
         * */
 
-        /* hi.
+        /* comment.
         *   IoC Contatiner == Application Context == Bean Factory
         *  */
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);

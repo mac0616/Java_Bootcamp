@@ -6,9 +6,9 @@
 </head>
 <body>
     <h1>ModelAttribute 로 받은 값 확인하기!</h1>
-    <h3 th:text="${menu.getName()}"></h3>
-    <h3 th:text="${menu.getPrice()}"></h3>
-    <h3 th:text="${menu.categoryCode}"></h3>
-    <h3 th:text="${menu.orderableStatus}"></h3>
+    <h3 th:text="${menuDTO.getName()}"></h3>    <!-- getter로 가져옴-->
+    <h3 th:text="${menuDTO.getPrice()}"></h3>
+    <h3 th:text="${menuDTO.categoryCode}"></h3> <!-- 필드에서 가져옴-->
+    <h3 th:text="${menuDTO.orderableStatus}"></h3>
 </body>
 </html>

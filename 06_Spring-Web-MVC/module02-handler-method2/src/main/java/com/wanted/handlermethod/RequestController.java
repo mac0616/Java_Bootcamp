@@ -83,14 +83,15 @@ public class RequestController {
     *   나중에 전달받을 값이 많아지는 경우에 관리해야 할 변수 , 키 값이 많아진다.
     *   @ModelAttribute 는 클래스 자료형을 활용하여, 여러 값을 한 번에 받아올 수 있는 기능을 제공한다.
     *   단, 이름이 중요함. (지금은 dto랑 html 에서 이름이 같아 자동 바인딩 되는 중. [name 속성 반드시 볼 것])
-    *   Model 객체에 응답 addAtrribute (=midel.addAttribute("msg", msg) 를 하지 않아도,
+    *   Model 객체에 응답 addAtrribute (=model.addAttribute("msg", msg) 를 하지 않아도,
     *   네이밍 규칙에 의해 사용할 수 있다.
     *   ex) @ModelAttribute("menu") -> view 에서 menu 이름으로 값 사용
     *   ex) @ModelAttribute("menu") -> view 에서 menuDTO 이름으로 값 사용
      * */
     @PostMapping("search")
-    public String searchMenu(Model model, @ModelAttribute("menu") MenuDTO menu){
-                                            // toString 해놔서 나옴.
+    public String searchMenu(@ModelAttribute MenuDTO menu){
+//    public String searchMenu(Model model, @ModelAttribute("menu") MenuDTO menu){
+                                            // toString 해놔서 나옴.   // 이렇게 쓰려면 searchResult.html에서 menuDTO가 아닌 menu라 써야함.
         System.out.println("menu = " + menu);
 
         return "request/searchResult";

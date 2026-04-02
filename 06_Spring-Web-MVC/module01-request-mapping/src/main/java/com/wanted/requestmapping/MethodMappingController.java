@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MethodMappingController {
 
-
     /* comment.
     *   1. 메소드 방식 미지정
     *   - GET, POST 방식 상관 없이 사용자의 요청을 모두 처리한다.

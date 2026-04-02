@@ -22,7 +22,7 @@ public class LoggingAspect {
 
     @Before("execution(* com.wanted.aop.section02.MemberService.*(..))")
     public void logBefore(JoinPoint joinPoint) { // ProceedingJoinPoint(@Around에서 함) 안 하고 JoinPoint.
-
+                        // JoinPoint = 어떤 메소드가 작동할 것인지.
         // JoinPoint 는 Advice 메서드가 적용되는 지점에 대한 정보를 제공하는 객체이다.
         String methodName = joinPoint.getSignature().getName();
         Object[] args = joinPoint.getArgs();    // getArgs() 반환 타입이 Object[]임.

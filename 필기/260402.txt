@@ -1,0 +1,18 @@
+spring-boot
+* 설정
+3.5.13 버전
+
+- spring boot devtools
+- spring web
+- thymeleaf   		   ==> jsp(레거시 함) 대신 사용
+- Lombok
+[선택]
+===================================================
+.resources
+* static = 정적
+web server page 작성
+.html, .css, .js
+
+* templates = 동적
+waeb application server(=was)
+-> 우리 controller, service, dao, dbb 를 거쳐서 나온 데이터를 표현하는 파일

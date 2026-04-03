@@ -22,11 +22,11 @@ public class RequestController {
     *   2. 메소드의 타입을 void 로 하게 되면
     *   - 요청 url이 view 의 이름이 된다.
     * */
-    @GetMapping("regist")
+    @GetMapping("regist")   // Servlet doGet() 과 같은 역할
     public void regist() {}
     /* 위 코드와 동일함. @GetMapping("regist") public String test() { return "request/regist"; } */
 
-    @PostMapping("regist")
+    @PostMapping("regist")  // Servlet doPost() 랑 같은 역할
 //    public String registMenu(Model model, HttpServletRequest request) {} // jakarta가 제공함. 권장 X
     public String registMenu(Model model, WebRequest request) {
 

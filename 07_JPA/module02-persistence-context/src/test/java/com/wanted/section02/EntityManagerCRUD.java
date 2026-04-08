@@ -39,7 +39,7 @@ public class EntityManagerCRUD {
         int menuCode = 2;
 
         // when
-        Menu foundMenu = manager. 57 5ifind(Menu.class, 2);
+        Menu foundMenu = manager.find(Menu.class, 2);
 
         // then
         Assertions.assertNotNull(foundMenu);

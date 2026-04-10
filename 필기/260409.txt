@@ -1,0 +1,21 @@
+Many to One 이 가장 많을 것. (OneToMany 보다)
+-> 외래키 받는 쪽이 할 일이 훨씬 많다.
+
+어제는 ManyToOne 확인 (07_JPA_module04_section01)(단방향)
+
+
+오늘은 OneToMany 확인 (07_JPA_module04_section02) (단방향)
+// 반대에서만 메뉴에 대한 정보를 알고 있음. (카테고리 정보를 지움 - 메뉴는 카테고리 정보 모름.
+
+section3 <양방향>
+- 연관관계 설정 (사진 참고) {필요시 = 요구사항 따라서}
+- 주인은 menu (category_code를 가지고 있어서) 그래서 Category.java 에서  @OneToMany(mappedBy = "category")라고 설정. 양방향 연결 위해
+
+=======================================================
+미니프로젝트 (module07)
+
+
+http://localhost:8080/menu/search?menuPrice=3000
+? = 쿼리스트링
+menuPrice = key 값
+3000 = value 

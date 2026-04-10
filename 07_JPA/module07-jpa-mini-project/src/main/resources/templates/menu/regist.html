@@ -24,9 +24,10 @@
 </form>
 
 <script>
+    <!-- fetch 는 기본적으로 Get 방식이다. -->
     // category 정보 담겨있음
     fetch('/menu/category') // 아직은 js 객체가 아닌 형태만 js
-        .then(res => res.json()) // 형태만 js 인 녀석을 진짜 js객체로 변환
+        .then(res => res.json()) // 형태만 js 인(지금은 카테고리 문자열) 녀석을 진짜 js객체로 변환
         .then(data => {
 
             // html 요소 취득하기
@@ -42,8 +43,20 @@
 
                 $categoryCode.appendChild($option);
             }
-
         })
+
+        // 예시. (MenuController.java)
+        // fetch("menu/delete/1", {
+        //     method : "DELETE",       // DELETE, POST, PUT
+        //     headers : {
+        //         "Content-Type" : "application/json"     // 컴파일러에 json 형태로 보내겠다.
+        //     },
+        //     body : JSON.stringify({
+        //         name : "raccoon",
+        //         age : 20
+        //     })
+        //
+        // })
 </script>
 </body>
 </html>

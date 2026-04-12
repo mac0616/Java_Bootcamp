@@ -111,18 +111,4 @@ public class MenuController {
         return mv;
     }
 
-
-    @GetMapping("/delete")
-    public void deletePage(){}
-
-    @PostMapping("/delete")
-    public ModelAndView deleteMenuCode(@RequestParam int menuCode, ModelAndView mv){
-
-        menuService.deleteMenu(menuCode);
-
-        mv.setViewName("redirect:/menu/list");
-
-        return mv;
-    }
-
 }

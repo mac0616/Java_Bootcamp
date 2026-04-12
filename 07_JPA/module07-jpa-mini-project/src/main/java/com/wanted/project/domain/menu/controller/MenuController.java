@@ -111,10 +111,6 @@ public class MenuController {
         return mv;
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> d3ac38517300b2ae38fd14fbb2c76241387e2dd7
     @GetMapping("/delete")
     public void deletePage(){}
 

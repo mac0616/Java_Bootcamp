@@ -113,4 +113,13 @@ public class MenuService {
 
         // 2, 3번은 동일하나 3번처럼 Builder 패턴을 직접 만드는 것을 지향함.
     }
+
+    @Transactional
+    public void deleteMenu(int menuCode) {
+
+        menuRepository.deleteById(menuCode);
+
+        System.out.println(menuCode + "번 메뉴 삭제 완료!");
+
+    }
 }

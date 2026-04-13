@@ -1,0 +1,236 @@
+[진행 순서]
+1. MySQL 에서 
+create_database => root 계정에서 읽히기!
+create_tables => wanted 계정에서
+===========================
+로그인 시  pw 틀릴 때마다 필터로 카운트. 5회 실패시 계정 락. 
+실패 성공 여부와 상관없이 로그남길 것.
+===========================
+2. application.yml 작성
+===========================
+3. ContextConfig 작성
+- global 패키지 안에 있으니 scan 해야 함.
+- dto -> entity로 / entity -> dto로 바꿔주는 유용한 아이
+===========================
+4. IndexController 생성
+- 기본 요청 시 페이지 이동을 위한 컨트롤러 작성
+===========================
+5. index.html 작성
+- 로그인 , 회원가입 , 로그아웃 (링크)만들기
+===========================
+6. 회원가입 먼저 만들기
+(로그인 하려면 선행 조건으로 회원가입이 되어야 한다.)
+- UserController 생성 (GetMappiong 만 작성)
+
+- resources.user.signup.html 생성
+-> post 방식으로 회원가입 form 작성.
+-> 아이디, 사용자 이름, 비밀번호, 권한(스스로 설정[회원, 관리자]) label 로 작성하고 input 태그로 사용자 입력 받기 (지금 작성된 코드랑 다름.) / submit 버튼 만듦.
+===========================
+7. SignupDTO 작성
+지금 코드랑 다르게 lombok 사용.
+<⭐⭐중요⭐⭐ html 에 name 으로 설정해둔대로 DTO 에 만들어야 함.⭐⭐>
+===========================
+8. UserController에서 사용자 
+- PostMapping 추가
+- request : signupDTO / response : mv(ModelAndView)
+<⭐ 요청이 있으면 반드시 응답이 있다.>
+===========================
+9.  MemberService 생성 (18줄까지 작성)
+===========================
+10. UserController (정수값 반환하기- 32줄부터 작성)
+===========================
+11. UserController에 regist 메서드 추가
+===========================
+12. regist (Service에서)
+- @Transational 어노테이션 달기
+- Respositoy 추가(21줄)
+===========================
+13. UserRepository 인터페이스 추가
+- Persistence Context 영역으로 Entity 매니저가 Entity 클래스를 관리하는 곳.
+===========================
+14. User Entity 하나 만들기
+UserId에 Unique 제약 조건 걸기 (@UniqueConstraint)
+<⭐Entity는 setter 사용 X>
+===========================
+15. Service에서 로직 작성하기
+- 중복 아이디 체크
+- 중복된 아이디가 존재함 null로 표시
+- existsByUserId 메소드 추가
+(userRepository 에서)
+- > @Repository 상속받음. 
+-> JpaRepository<User, Integer> -> 10번에 정수값 반환했으니까 Integer
+ (다시 Service)
+- 중복된 ID 없으면 회원 가입 실행! 작성(.pass 전까지만 작성 / 나머지는 다 작성함.) -> save 시켜주기.
+==> 3가지 값 리턴됨. (null, UserCode, 0)
+==> signupDTO에 4가지 값 넣어주고 regist에서 비즈니스 로직(if~catch) 실행 
+===========================
+16. JpaConfig 생성
+- Bean 등록.
+- JpaRepository 사용 가능하도록 세팅.
+- EntityScan
+(패키지는 같은 곳을 바라보도록 함.)
+===========================
+17. UserController
+- result -> 중복 ID
+- user code -> 정상 동작
+- 0 -> 서버오류
+
+=> result 를 통해서 3가지 분기 만들기
+message 만들어서 조건문 작성.
+<@PostMapping("/signup") 작성 완.>
+
+DML void 하면 잘 된건가..? 모름. 분기를 만들거나 얻을 수 있는 힌트를 얻기 위해 반환 타입을 지정하는 것이 좋음.
+===========================
+18. 이렇게 작성해도 signup 할 수 없음. Security가 다 막아놔서. 일단 마음 속으로 됐다 생각하고 로그인 만들기
+===========================
+19. auth/login 만들기
+- AuthController 생성
+-> @GM("/login") 만들기
+===========================
+20. auth 디렉터리에 login.html 만들기
+( 이 파일은 꾸미기 요소 없음. 굉장히 중요해서..)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+(여기서도 name 속성 중요)
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+Security는 우리가 직접 로그인 작성하지 X => 오버로딩해서 사용함. 키 값 잘 알아야 함.⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+<Security 관련 설정>
+- auth 에서 중요한 파일
+🌟 Config (Security 관련 설정하기 위해 중요한 클래스)
+🌟handler (분기처리 or 커스텀을 하기 위해 중요한 클래스)
+========================
+21. SecurityConfig 생성
+시큐리티 설정 위해 빈으로 등록
+🌟 @EnableWebSecurity 추가
+- 비밀번호는 절대 평문으로 입력 X
+- 비밀번호, 개인정보는 반드시 암호화처리해야 함. (아님 불법)
+
+- 비밀번호 인코딩 하기 위해 사용함.
+@Bean
+public PasswordEncoder passwordEncoder() { return new BCryptPasswordEncoder(); } 
+작성
+
+- @Bean ... WebSecurityCustomizer... 작성 (필터)
+(인터셉트할 때 다 css, js 등(꾸미는거)건 다 동작함. 그래서 정적인 파일은 Security 관련해서 제외하겠다는 설정.)
+
+⭐가⭐장⭐중⭐요⭐
+- @Bean ..SecurityFilterChain... 작성
+⭐가⭐장⭐중⭐요⭐
+(Http req , res 관련 Security 설정을 하는 공간
+
+- return http.build();작성 -> 예외는 throw 함.
+- http를 authorizeHttpRequests 함.
+ (= 인증관련 설정을 할 수 있음.)
+-> .permitAll() = 모든 것을 허용한다. (로그인 페이지부터 시큐리티로 막으면 로그인 못함. 그래서 로그인 하지 않은 사람 들어올 수 있도록.)
+(main 페이지, 회원가입, 로그인실패도 허용)
+
+-> hasAnyAuthority (역할이 있는)
+(권한을 가진 사람만 접근 가능하도록 설정)
+- 권한이 많거나 하면 "USER" 이렇게 안 쓰고 enum 클래스 사용 가능함. (ex. userno.~ 이런식으로 사용)
+
+(접두사를 잘 정해야 편리함)
+
+- auth.anyRequest().authenticated();
+(그 외 요청들은 로그인을 완료하면 접근 가능하게 설정)
+
+- }).formLogin(..)
+: 로그인 시 관련된 설정 가능. (login.html, UserController 같이 보기)
+ - login.loginPage : 현재는 로그인이 가장 먼저 나옴. 이걸 커스터마이징.
+- login.usernameParameter : security 에서 username은 우리가 흔히 아는 사용자 ID라고 생각하면 된다. (html에서 넘어오는 이름 작성 (=user))
+- login.passwordParameter : 사용자가 작성한 name 속성(user랑 같은 이유.)
+
+- }).logout(..) 작성
+: 로그아웃 관련 설정
+: 링크를 다 맞춰야 함. (html이랑)
+: logout.deleteCookies (로그아웃 시 쿠키 삭제) (로그인 시 jsession 쿠키가 생김 그걸 삭제함.)
+: logout.invalidateHttpSession(true); (세션 소멸)
+: logout.logoutSuccessUrl("/"); (로그아웃 후 이동할 페이지 설정 [main 페이지로 이동])
+
+- }).sessionManagement(...)
+: 세션 관리
+: session.maximumSessions(1) 
+  (⭐중복 로그인 방지⭐)
+: session.invalidSessionUrl("/");
+ (세션은 소멸기한이 있어서 세션 만료 시 이동할 페이지 지정) -> (지금은 메인인데 로그인 페이지로 지정해서 다시 로그인하도록 할 수 있음.)
+
+- .csrf(csrf -> csrf.disable());
+: 보안 설정.
+: 근데 세션으로 로그인하는 경우 거의 없음. 이 방법은 다음 프로젝트부터는 의미 X.
+ 
+* 사용자가 동작시키면 가장 먼저 작동하는 것이 시큐리티 필터 체인(SecurityConfig)임.
+==========================
+(로그인 성공, 실패 시)
+22. handler. AuthFailHandler & AuthSuccessHandler 생성
+- [Fail] 상속 하나 받음 (SimpleUrlAuthenticationFailureHandler)
+- 필드로 서비스  받고 생성자(service 사용 위해) 하나 만들기.
+
+- 사용자가 잘못된 로그인 시도 시 개입을 위한 설정 진행. (onAuthenticationFailure 작성 (실패 로그 저장 전까지)
+===========================
+23. 로그인 실패 시 발생할 문제에 대한 커스텀 메소드 작성 (incrementLoginFailCount -> MemberService에) 
+(= 로그인실패에 대한 커스터마이징) 
+- @Transactional 지정 -> username 이 레퍼지토리에 있나 확인 -> currentFailCount 하나씩 증가시킴.
+-> currentFailCount 가 5를 넘는다면 )(빌더패터를 사용해서) 계정 잠금 true
+-> lock, 존재  x, 등등의 경우 작성.
+===========================
+24. 로그인 성공 시 발생할 문제에 대한 커스텀 메소드 작성 
+- [Success] 상속 하나 받음 (SimpleUrlAuthenticationSuccessHandler)
+- 필드로 서비스  받고 생성자(service 사용 위해) 하나 만들기. (지금은 bean으로 설정 안하고 service에서 불러와서 사용. 나중에 빈으로 만들 것 - 순환참조 때문에)
+===========================
+25. 로그인 성공 시 발생할 문제에 대한 커스텀 메소드 작성 
+(resetLoginFailCount -> MemberService에) 
+(= 로그인 성공에 대한 커스터마이징))
+-> 성공시 로그인 실패 카운트 리셋
+===========================
+26. 만든 두가지를 SecurityConfig에 등록 (+ Bean 등록)
+(authFailHandler & authSuccessHandler)
+===========================
+27. (SecurityConfig에서) Bean으로 등록한 SuccessHandler 와 FailHandler 사용
+- > SecurityFilterChain에 2개 handler 등록한 후 코드작성
+login.successHandler(authSuccessHandler);  login.failureHandler(authFailHandler);  
+===========================
+28. AuthController
+- PostMapping 우리가 만들지 않음.
+
+===========================
+29. LoginUserDTO 생성.
+- 꺼내올 값들 작성. (userCode, id,,.. 등)
+===========================
+30. AuthDetails 생성
+- model의 dto, service는 secrity  기존 클래스를 상속받아 커스텀할 것.
+- AuthDetails 에서 UserDeatils implements 함.
+- 모든 메서드 구현.
+- LoginUserDTO를 자식으로 가질 수 있도록 함. (*session 에 담을 용도로 사용하는 커스텀 DTO)
+- (LoginUserDTO를) getRole() 작성
+- (AuthDetails)  getPassword, getUsername return 작성
+- isAccountNonExpired , isAccountNonLocked, isCredentialsNonExpired, isEnabled return 작성
+===========================
+31. AuthService 생성
+- UserDetailsService 상속 받기
+- 메서드 구현 강제화된 것 구현하기 (loadUserByUsername)
+- 어노테이션 달기
+- MemberService 불러오기
+- loadUserByUsername 작성.
+- findByUserName 생성 (MemberService에)
+===========================
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+⭐한줄 요약⭐
+🌟🌟 AuthService🌟 는 UserDetailService를 상속받아 메서드 구현 후 우리가 가지고 있을 정보 객체 만드는 것.
+🌟🌟 AuthDetails🌟 는 UserDetail  상속 받아 로그인 시 Session 에 담아둘 정보 커스터마이징
+🌟 AuthFailHandler 는 실패 시 어떻게 동작할지?
+🌟 AuthSuccessHandler 는 성공 시 어떻게 동작할지?
+🌟 SecurityConfig == 가장 핵심
+=> 이 5가지 잘 기억하기.
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+===========================
+32. MemberService 에서
+- 비밀번호 인코딩 진행
+: PasswordEncoder 선언 & .password(encoder.encode(signupDTO.getUserPass())) 작성
+: .userRole(signupDTO.getRole()); 작성
+===========================
+* 한가지 참고할 점
+Haandler 2개 보면 repository를 바로 호출함.
+좋은 로직 아님. 서비스를 들렀다 가는게 좋음. (관련 서비스 만들어서 들렀다 가기)
+===========================
+☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️
+Tip : 별도의 프로젝트에서 만들고 붙이는게 좋음. 로그인 안되면 동작안 될 수도 있어서.
+이 코드를 베이스로 AI 사용하기!!
+☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️☠️                          

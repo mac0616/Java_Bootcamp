@@ -49,7 +49,7 @@ public class UserController {
 
 
 //    View 에서 Session 에 저장 된 회원의 PK 를 hidden input 같은 걸로 넘기면,
-//    사용자가 값을 바꿔서 다른 사람 ID로 글을 등록하는 것처럼 조작할 수 있다.
+//    사용자가 값을 바꿔서 다른 사람 ID로 글을 등록하는 것처`럼 조작할 수 있다.
 //    반면 서버에서 현재 로그인한 사용자를 기준으로 작성자를 정하면, 클라이언트가 작성자 정보를 마음대로 바꿀 수 없다.
 //    @AuthenticationPrincipal AuthDetails authDetails 를 활용해서 로그인 한 사용자의 정보를 꺼내보자.
 //    @PostMapping("/posts")

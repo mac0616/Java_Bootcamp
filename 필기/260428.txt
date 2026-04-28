@@ -1,0 +1,20 @@
+API = Application Programming Interface
+
+
+front ---> interface (API) ---> backend
+front <---interface (API)------ backend
+
+======================
+*과제 : post, put, delete swagger 해보기
+
+======================
+- Post man
+: 클라우드 상태
+: 배포가 된 상태
+: FE/BE 반 모두 확인 할 수 있음. (workspace에 초대)
+: 협업 시에는 Postman 에 우리의 API를 정리해서 공유한다.
+
+- Swagger
+: 로컬 기반 html 파일
+: 배포를 해야지만 FE 가 볼 수 있음.
+: 우리끼리 API 에 대한 정보를 충분히 확인하는 것이 Swagger 사용 목적이다.오후 12:07 2026-04-28

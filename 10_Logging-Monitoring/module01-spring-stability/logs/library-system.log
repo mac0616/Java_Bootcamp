@@ -3784,3 +3784,74 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 2026-04-29 12:21:45.432 [http-nio-8080-exec-10] DEBUG [e62dc19c] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ErrorResponse{errorCode='INTERNAL_SERVER_ERROR', message='서버 내부 오류가 발생했습니다.', timestamp=2026-04-29T1 (truncated)...]
 2026-04-29 12:21:45.432 [http-nio-8080-exec-10] WARN  [e62dc19c] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
 2026-04-29 12:21:45.432 [http-nio-8080-exec-10] DEBUG [e62dc19c] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2026-04-29 12:54:07.992 [http-nio-8080-exec-5] DEBUG [2f20e28f] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2026-04-29 12:54:07.992 [http-nio-8080-exec-5] DEBUG [2f20e28f] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-04-29 12:54:07.995 [http-nio-8080-exec-5] DEBUG [2f20e28f] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-04-29 12:54:07.995 [http-nio-8080-exec-5] DEBUG [2f20e28f] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.ohgiraffers.stability.section01.exception.handler.GlobalExceptionHandler#handleGenericException(Exception, HttpServletRequest)
+2026-04-29 12:54:07.995 [http-nio-8080-exec-5] ERROR [2f20e28f] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] c.o.s.s.e.h.GlobalExceptionHandler - [s1][GlobalExceptionHandler] 예상하지 못한 오류 발생
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.ohgiraffers.stability.section02.logging.config.LoggingConfig$1.doFilterInternal(LoggingConfig.java:78)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-29 12:54:07.995 [http-nio-8080-exec-5] DEBUG [2f20e28f] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2026-04-29 12:54:07.995 [http-nio-8080-exec-5] DEBUG [2f20e28f] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [ErrorResponse{errorCode='INTERNAL_SERVER_ERROR', message='서버 내부 오류가 발생했습니다.', timestamp=2026-04-29T1 (truncated)...]
+2026-04-29 12:54:07.995 [http-nio-8080-exec-5] WARN  [2f20e28f] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-04-29 12:54:07.995 [http-nio-8080-exec-5] DEBUG [2f20e28f] [GET] [/favicon.ico] [0:0:0:0:0:0:0:1] o.s.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2026-04-29 14:37:39.623 [HikariPool-6 housekeeper] WARN  [] [] [] [] com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Thread starvation or clock leap detected (housekeeper delta=46m51s71ms67µs).
+2026-04-29 15:50:16.339 [SpringApplicationShutdownHook] INFO  [] [] [] [] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-29 15:50:16.515 [tomcat-shutdown] INFO  [] [] [] [] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-29 15:50:16.521 [SpringApplicationShutdownHook] INFO  [] [] [] [] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-29 15:50:16.522 [SpringApplicationShutdownHook] DEBUG [] [] [] [] org.hibernate.SQL - 
+    drop table if exists tbl_book cascade 
+2026-04-29 15:50:16.523 [SpringApplicationShutdownHook] DEBUG [] [] [] [] org.hibernate.SQL - 
+    drop table if exists tbl_loan cascade 
+2026-04-29 15:50:16.523 [SpringApplicationShutdownHook] DEBUG [] [] [] [] org.hibernate.SQL - 
+    drop table if exists tbl_member cascade 
+2026-04-29 15:50:16.523 [SpringApplicationShutdownHook] DEBUG [] [] [] [] org.hibernate.SQL - 
+    drop table if exists tbl_review cascade 
+2026-04-29 15:50:16.525 [SpringApplicationShutdownHook] WARN  [] [] [] [] o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2026-04-29 15:50:16.526 [SpringApplicationShutdownHook] INFO  [] [] [] [] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2026-04-29 15:50:16.527 [SpringApplicationShutdownHook] INFO  [] [] [] [] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.

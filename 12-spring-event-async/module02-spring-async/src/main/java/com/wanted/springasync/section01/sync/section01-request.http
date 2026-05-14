@@ -1,0 +1,2 @@
+# POST localhost:8080/api/v1/section01/enrollments/1/completion
+# Postman 안되는 사람이 이 방법 사용하면 테스트 할 수 있음.

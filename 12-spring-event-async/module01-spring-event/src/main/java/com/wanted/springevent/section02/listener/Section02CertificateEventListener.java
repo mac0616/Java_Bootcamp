@@ -27,6 +27,7 @@ public class Section02CertificateEventListener {
     *   추후 개발 시에는 service 를 가지고 있는 구조로 변경해야 한다.
     *   ==> 나중에는 repository가 아닌 service 호출해야 함.
     * */
+    // 의존성 주입 받음
     private final EnrollmentRepository enrollmentRepository;
     private final CertificateRepository certificateRepository;
 

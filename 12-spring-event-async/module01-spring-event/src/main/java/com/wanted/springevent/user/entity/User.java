@@ -18,7 +18,7 @@ public class User {
 
     @Column(name = "password_hash")
     private String passwordHash;
- 
+
     @Column(name = "name", nullable = false, length = 100)
     private String name;
 

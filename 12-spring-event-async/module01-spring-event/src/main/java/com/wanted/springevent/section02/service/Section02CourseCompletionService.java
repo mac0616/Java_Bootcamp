@@ -20,8 +20,7 @@ public class Section02CourseCompletionService {
     *   라는 사실만 이벤트로 발생시킬 것이다.
     *   -----
     *   [중요한 점]
-    *   객체 와 객체 간의 의존성을 제거하는 행위에 있어서
-    *   Event 가 만능처럼 보일 수 있다.
+    *   객체 와 객체 간의 의존성을 제거하는 행위에 있어서 Event 가 만능처럼 보일 수 있다.
     *   의존성을 제거해서 모든 기능을 Event 방식으로 바꾸게 되면
     *   @Transactional 경계가 무너지게 된다.
     *   따라서 Event 를 만들 때 신경써야 하는 부분은

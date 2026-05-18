@@ -1,13 +1,18 @@
 package com.wanted.springasync.section3.async_event;
 
 import com.wanted.springasync.common.support.LectureResponse;
+import com.wanted.springasync.common.support.SleepUtils;
 import com.wanted.springasync.domain.course.Enrollment;
 import com.wanted.springasync.repository.course.EnrollmentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.engine.spi.ComparableExecutable;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.concurrent.CompletableFuture;
 
 @Slf4j
 @Service
@@ -80,5 +85,48 @@ public class AsyncEventService {
                 "메인흐름 완료. 비동기 수강 요약 생성은 백그라운드에서 계속 진행중!",
                 start
         );
+    }
+
+    public CompletionSummaryResponse waitCompletionSummary(Long enrollmentId) {
+
+        long start = System.currentTimeMillis();
+
+        log.info("[section03] CompletableFuture 수강 완료 대기 시작!!. 작업을 처리 중인 Thread = {}", Thread.currentThread().getName());
+
+        // 비동기 메서드 호출
+        // 비동기 메소드의 결과 값을 담을 future 변수 선언
+       CompletableFuture<String> future = completionSummaryService.createSummaryAsync(enrollmentId);
+
+       /* comment.
+       *    join() : 현재 메인 흐름의 요청 스레드를 멈춰세우고, Future 결과가 채워질 때까지 기다린다.
+       *    즉, @Async 메서드의 결과가 도출될 때까지 기다린다고 생각하면 된다.
+       *    get() : 예외처리가 필수적이다. 실무에서는 join() 을 활용하기 보다는
+       *    예외처리가 강제적인 get(timeout, unit) 형식으로 작성해서
+       *    최대 대기 기간을 설정하여 timeout 시 비동기 결과를 기다리지 않고, 메인 흐름으로 넘어가는 방식으로 사용하게 된다.
+       * */
+        String summary = future.join();
+
+        log.info("[section03] CompletableFuture 수강 완료 대기 종료!!. 작업을 처리 중인 Thread = {}", Thread.currentThread().getName());
+
+
+        return CompletionSummaryResponse.completed(
+                "메인흐름 완료. 비동기 수강 요약 생성을 join() 으로 대기함!",
+                summary,
+                start
+        );
+    }
+
+    @Async
+    public void voidExceptionAsync() {
+
+        log.info("[section04] void 반환형 비동기 메소드 호출됨.. thread={}", Thread.currentThread().getName());
+
+        SleepUtils.sleep(1000L);
+
+        throw new IllegalArgumentException("❌ void 반환 타입의 비동기 메서드 예외 발생!!! ❌");
+
+        // 위에서 에러를 그냥 작성해서 에러남.
+        //        log.info("[section04] void 반환형 비동기 메소드 종료됨.. thread={}", Thread.currentThread().getName());
+
     }
 }

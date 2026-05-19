@@ -80,6 +80,7 @@ public class AuthService {
             throw new IllegalArgumentException("이미 사용 중인 이메일입니다.");
         }
 
+        //z
         User user = User.builder()
                 .username(request.getUsername())
                 .password(passwordEncoder.encode(request.getPassword()))

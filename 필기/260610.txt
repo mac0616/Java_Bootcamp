@@ -1,0 +1,15 @@
+[부하테스트 - k6]
+jmeter는 사용하기 복잡 -> k6 사용.
+https://grafana.com/docs/k6/latest/set-up/install-k6/ 들어가서
+명령어 복사
+인텔리제이 터미널에 아래 순서대로 동작시키기
+--------------------
+winget install k6 --source winget
+$env:PATH += ";C:\Program Files\k6"
+k6 --version
+k6 run .\k6\scripts\00-smoke-check.js
+--------------------
+=> results 폴더에 파일 생성됨. (json & md)
+(json 파일은 export해서 http 파일로 만들 수 있음. -> summary에서 설정)
+==================================
+이번 발표에서 중점 : 어떤 시나리오로 부하 측정했는지

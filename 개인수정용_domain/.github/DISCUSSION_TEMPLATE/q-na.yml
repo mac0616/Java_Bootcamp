@@ -1,0 +1,63 @@
+# .github/DISCUSSION_TEMPLATE/q-na.yml
+title: "[Q&A] "
+labels: ["question", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!TIP]
+        > **질문 전 확인해 주세요!**
+        > 해결하고 싶은 문제나 궁금한 점을 구체적으로 적어주시면 팀원들이 더 빠르게 도움을 줄 수 있습니다.
+        
+        ```diff
+        + 에러 로그나 스크린샷이 있다면 큰 도움이 됩니다.
+        # 문제가 해결되면 'Answer'를 채택하거나 제목을 [SOLVED]로 변경해 주세요.
+        ```
+
+  - type: textarea
+    id: problem_description
+    attributes:
+      label: "❓ 질문 내용"
+      description: |
+        궁금한 내용이나 현재 겪고 있는 문제를 설명해 주세요.
+      placeholder: |
+        예: Flutter에서 특정 위젯이 화면 크기에 따라 깨지는 현상이 발생합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: attempts
+    attributes:
+      label: "🔍 시도해본 방법"
+      description: |
+        문제를 해결하기 위해 이미 시도해본 코드나 검색해본 내용이 있다면 적어주세요.
+      placeholder: |
+        예: 공식 문서를 참고하여 Expanded 위젯을 사용해봤지만 해결되지 않았습니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: error_logs
+    attributes:
+      label: "💻 에러 로그 또는 스크린샷 (선택)"
+      description: |
+        관련 코드 스니펫이나 에러 터미널 출력값을 붙여넣어 주세요.
+      placeholder: |
+        에러 내용을 이곳에 붙여넣어 주세요.
+        예:
+        ```
+        Error: [Specific Error Message here]
+        ```
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected_outcome
+    attributes:
+      label: "🎯 기대하는 결과"
+      description: |
+        어떤 상태가 되기를 원하시나요?
+      placeholder: |
+        예: 기기 해상도에 상관없이 버튼이 하단에 고정되기를 원합니다.
+    validations:
+      required: false

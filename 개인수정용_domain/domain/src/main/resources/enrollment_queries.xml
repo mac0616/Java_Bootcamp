@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<properties>
+
+    <query key="enrollment.udpate">
+
+    </query>
+
+    <!--관리자가 강좌별 수강생 전체 조회-->
+    <query key="view.student.bycourseid">
+    SELECT
+    c.course_id,
+    c.title,
+    u.user_no,
+    u.user_id,
+    u.user_name,
+    u.user_phone_number
+    FROM course c
+    JOIN enrollment e ON c.course_id = e.course_id
+    JOIN student s ON e.student_id = s.student_id
+    JOIN user u ON s.user_no = u.user_no
+    WHERE u.status = true
+    ORDER BY c.course_id;
+    </query>
+
+    <!--특정 학생의 강좌 리스트-->
+    <query key="enrollment.isStudyingCourse">
+        select
+            course_id
+        from enrollment
+        where student_id = ?
+    </query>
+
+
+    <query key="enrollment.save">
+        INSERT INTO ENROLLMENT (`student_id`, `course_id`)
+        VALUES (?, ?);
+    </query>
+
+    <query key="enrollment.findById">
+        SELECT
+        enrollment_id,
+        progress_rate,
+        course_id
+        FROM enrollment
+        WHERE enrollment_id = ?
+    </query>
+
+    <query key="enrollment.updateProgress">
+        UPDATE enrollment
+        SET progress_rate = progress_rate + 20,
+        end_date = CASE WHEN progress_rate >= 100 THEN CURRENT_DATE ELSE end_date END,
+        status = CASE WHEN progress_rate >= 100 THEN 1 ELSE status END
+        WHERE student_id = ? AND course_id = ? AND progress_rate &lt; 100
+    </query>
+
+    <query key = "enrollment.studentcourse">
+        SELECT
+        c.course_id,
+        c.title,
+        e.progress_rate
+        FROM enrollment e
+        JOIN course c ON e.course_id = c.course_id
+        WHERE e.student_id = ? AND e.status = 0;
+    </query>
+
+
+</properties>

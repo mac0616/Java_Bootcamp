@@ -1,0 +1,36 @@
+# .github/DISCUSSION_TEMPLATE/q-a.yml
+title: "[질문] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🙋‍♂️ 질문하기 전에 확인해 주세요!
+        - [ ] 기존에 올라온 비슷한 질문이나 해결된 답변이 있는지 검색해 보셨나요?
+        - [ ] 답변자가 상황을 명확히 이해할 수 있도록 최대한 구체적으로 작성해 주세요.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🧐 어떤 문제가 발생했나요? / 무엇이 궁금하신가요?
+      description: 마주친 문제나 궁금한 점을 상세히 적어주세요.
+      placeholder: ex) 실행 과정에서 ~~한 에러가 발생합니다. / ~~기능의 작동 원리가 궁금합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 💻 실행 환경 (선택 사항)
+      description: OS 버전, 브라우저, 사용 중인 라이브러리 버전 등을 적어주시면 답변에 큰 도움이 됩니다.
+      placeholder: ex) Windows 11, Chrome 최신 버전
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📸 스크린샷 및 에러 로그 (선택 사항)
+      description: 터미널의 에러 로그나 문제 상황을 보여주는 스크린샷을 드래그 앤 드롭으로 첨부해 주세요.
+    validations:
+      required: false

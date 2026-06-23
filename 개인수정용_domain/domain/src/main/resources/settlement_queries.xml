@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<properties>
+
+    <query key="settlement.findById">
+        select * from settlement
+        where instructor_id = ?
+    </query>
+
+    <query key="settlement.getRevenueByInstructor">
+        SELECT
+        u.user_no AS instructor_id,
+        u.user_name AS instructor_name,  SUM(s.final_amount) AS total_revenue
+        FROM USER u
+        JOIN SETTLEMENT s ON u.user_no = s.instructor_id
+        WHERE s.status = 'COMPLETED'
+        GROUP BY u.user_no, u.user_name  ORDER BY total_revenue DESC
+    </query>
+
+    <query key="settlement.save">
+        INSERT INTO settlement (
+        course_id,
+        instructor_id,
+        raw_amount,
+        commission,
+        final_amount
+        ) VALUES (
+        ?, ?, ?, ?, ?)
+    </query>
+
+    <query key="settlement.updateStatus">
+        UPDATE settlement SET status = ? WHERE settlement_id = ?
+    </query>
+
+    <query key = "settlement.ViewAllSettlement">
+        SELECT
+        settlement_id,
+        course_id,
+        settlement_date,
+        instructor_id,
+        raw_amount,
+        commission,
+        final_amount,
+        status
+        FROM SETTLEMENT;
+    </query>
+
+    <query key = "settlement.ViewWaitSettlement">
+        SELECT
+        settlement_id,
+        course_id,
+        settlement_date,
+        instructor_id,
+        raw_amount,
+        commission,
+        final_amount,
+        status
+        FROM SETTLEMENT
+        WHERE status = 'WAIT';
+    </query>
+</properties>

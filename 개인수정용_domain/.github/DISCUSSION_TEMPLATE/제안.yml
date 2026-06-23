@@ -1,0 +1,41 @@
+# .github/DISCUSSION_TEMPLATE/ideas.yml
+title: "[제안] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!TIP]
+        > **기능 추가 및 개선 제안**
+        > 프로젝트를 발전시킬 수 있는 구조적인 제안이나 새로운 아이디어를 남겨주세요.
+        
+        ```diff
+        + 명확한 문제 정의와 제안 배경은 논의를 진행하는 데 큰 도움이 됩니다.
+        # 단순한 기능 추가뿐만 아니라 기존 로직의 개선안도 자유롭게 남겨주세요.
+        ```
+
+  - type: textarea
+    id: background
+    attributes:
+      label: "제안 배경"
+      description: "어떤 상황에서 필요성을 느끼셨는지 구체적인 컨텍스트를 작성해주세요."
+      placeholder: "현재 AtwoBthree 프로젝트의 구조에서 다음과 같은 한계가 존재합니다..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "상세 제안 내용"
+      description: "생각하신 아이디어나 시스템 개선안을 명확하게 적어주세요."
+      placeholder: "다음과 같은 방식이나 로직으로 개선하는 것을 제안합니다."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "고려해본 대안 (선택 사항)"
+      description: "이 아이디어 외에 고민해보셨던 다른 기술적 대안이나 우회 방법이 있다면 공유해주세요."
+    validations:
+      required: false

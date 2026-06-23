@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<properties>
+    <query key="payment.selectAll">
+        select * from payment
+    </query>
+
+    <query key="payment.save">
+        INSERT INTO PAYMENT (payment_amount, payment_method, status, student_id, course_id)
+        VALUES (?, ?, ?, ?, ?);
+    </query>
+
+    <query key="refund.selectAll">
+        select * from refund
+    </query>
+
+    <query key="payment.getRevenueByCourse">
+        SELECT
+        c.course_id,
+        c.title AS course_title,
+        SUM(p.payment_amount) AS total_revenue
+        FROM COURSE c
+        JOIN PAYMENT p ON c.course_id = p.course_id
+        WHERE p.status = true
+        GROUP BY c.course_id, c.title
+        ORDER BY total_revenue DESC
+    </query>
+
+    <query key="payment.selectForSettlement">
+        <![CDATA[
+    SELECT
+        course_id,
+        SUM(payment_amount) AS raw_amount
+    FROM payment
+    WHERE status = true
+    AND paid_at > (
+        SELECT settlement_date
+        FROM settlement
+        WHERE status = 'WAIT'
+        ORDER BY settlement_date DESC
+        LIMIT 1
+    )
+    AND paid_at <= ?
+    GROUP BY course_id
+    ]]>
+    </query>
+
+</properties>

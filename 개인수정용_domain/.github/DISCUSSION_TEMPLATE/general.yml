@@ -1,0 +1,50 @@
+# .github/DISCUSSION_TEMPLATE/general.yml
+title: "[GENERAL] "
+labels: ["general", "discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!NOTE]
+        > **AtwoBthree 자유 토론 및 공유**
+        > 특정 프로젝트에 종속되지 않는 일반적인 아이디어나 팀 운영, 기술 트렌드 등을 자유롭게 공유해 주세요.
+
+  - type: dropdown
+    id: topic_type
+    attributes:
+      label: "💬 논의 유형"
+      description: "이 게시글의 성격을 선택해 주세요."
+      options:
+        - "💡 아이디어 제안 (새로운 시도)"
+        - "📢 팀 공지사항 (전파 사항)"
+        - "❓ 질문 및 기술 지원"
+        - "☕ 가벼운 주제 (잡담/회고)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: topic_content
+    attributes:
+      label: "📝 상세 내용"
+      description: "공유하거나 논의하고 싶은 내용을 자유롭게 작성해 주세요."
+      placeholder: "예: 우리 팀의 코드 리뷰 방식을 이렇게 개선해 보면 어떨까요?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: key_points
+    attributes:
+      label: "📌 핵심 요약 (선택 사항)"
+      description: "바쁜 팀원들을 위해 논의의 핵심 포인트를 짧게 요약해 주세요."
+      placeholder: "- 기존 방식의 문제점\n- 새로운 방식 제안\n- 예상 기대 효과"
+    validations:
+      required: false
+
+  - type: textarea
+    id: feedback_request
+    attributes:
+      label: "🙋 요청 사항"
+      description: "팀원들에게 의견을 듣고 싶은 부분이나 결정이 필요한 사항을 적어주세요."
+      placeholder: "예: 이번 주 목요일까지 각자 생각하시는 라이브러리 후보를 댓글로 남겨주세요."
+    validations:
+      required: false

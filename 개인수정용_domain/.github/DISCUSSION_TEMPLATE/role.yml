@@ -1,0 +1,47 @@
+title: "[Role] "
+body:
+  - type: textarea
+    id: introduction
+    attributes:
+      label: "👥 팀원 역할 정의"
+      description: "🚨 주의: 이 칸의 텍스트는 수정하지 말고 그대로 두세요!"
+      value: |
+        AtwoBthree 프로젝트에서 각자 담당하고 있는 파트와 세부 역할을 확인합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: member-1
+    attributes:
+      label: "김진도"
+      value: |
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: member-2
+    attributes:
+      label: "백승재"
+      value: |
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: member-3
+    attributes:
+      label: "이채연"
+      value: |
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: member-4
+    attributes:
+      label: "이하연"
+      value: |
+        - [ ] 
+    validations:
+      required: true

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<properties>
+    <query key="course.findAllCourse">
+        select * from course
+        where status = true;
+    </query>
+    <query key="course.getPrice">
+        select
+            price
+        from course
+        where course_id = ?
+    </query>
+
+    <query key="course.selectMyCourse">
+        SELECT *
+        FROM course c
+        JOIN instructor u ON c.instructor_id = u.instructor_id
+        WHERE u.instructor_id = ?
+    </query>
+
+    <query key="course.isCourseExists">
+        <![CDATA[
+    SELECT EXISTS (
+        SELECT 1
+        FROM COURSE
+        WHERE course_id = ?
+          AND status = TRUE
+    ) AS isCourseExists
+    ]]>
+    </query>
+
+    <query key="course.findPriceById">
+
+    </query>
+    <query key="course.findId">
+        select course_id
+        from course
+        where instructor_id = ?
+    </query>
+
+    <query key="course.insertCourse">
+        INSERT INTO course (title, description, price, created_at, instructor_id)
+        VALUES (?, ?, ?, NOW(), ?)
+    </query>
+
+    <query key="course.insertSection">
+        INSERT INTO section (title, video_url, material_url, created_at, course_id)
+        VALUES (?, ?, ?, NOW(), ?)
+    </query>
+
+    <query key="course.deleteCourse">
+        DELETE FROM course c
+        WHERE course_id = ? AND instructor_id = ?
+    </query>
+
+    <query key="course.updateCourse">
+        UPDATE COURSE
+        SET title = ?,
+        description = ?,
+        price = ?
+        WHERE course_id = ?
+        AND instructor_id = ?
+    </query>
+
+    <query key="section.updateSection">
+        UPDATE SECTION s
+        JOIN COURSE c ON s.course_id = c.course_id
+        SET s.title = ?,
+        s.video_url = ?,
+        s.material_url = ?
+        WHERE s.section_id = ?
+        AND c.instructor_id = ?
+    </query>
+
+    <query key="section.selectSectionsByCourseId">
+        SELECT * FROM SECTION WHERE course_id = ?
+    </query>
+
+    <query key="section.updateSection">
+        UPDATE SECTION s
+        JOIN COURSE c ON s.course_id = c.course_id
+        SET s.title = ?,
+        s.video_url = ?,
+        s.material_url = ?
+        WHERE s.section_id = ? AND c.instructor_id = ?
+    </query>
+
+    <query key="course.selectInstructorCourses">
+        SELECT * FROM COURSE WHERE instructor_id = ?
+    </query>
+
+    <query key="course.adminDeleteCourse">
+        DELETE FROM COURSE WHERE course_id = ?
+    </query>
+
+    <query key="course.adminUpdateCourse">
+        UPDATE COURSE
+        SET title = ?,
+        description = ?,
+        price = ?,
+        status = ?
+        WHERE course_id = ?
+    </query>
+
+    <query key="course.myStudent">
+        SELECT
+        c.course_id,
+        c.title,
+        e.student_id,
+        u.user_name,
+        e.progress_rate,
+        e.start_date,
+        e.end_date,
+        e.status
+        FROM course c
+        JOIN ENROLLMENT e ON c.course_id = e.course_id
+        JOIN STUDENT s ON e.student_id = s.student_id
+        JOIN USER u ON s.user_no= u.user_no
+        WHERE c.instructor_id = ?
+        ORDER BY c.course_id ASC, e.start_date DESC
+    </query>
+
+    <query key="review.completedCourses">
+        SELECT
+        c.course_id,
+        c.title,
+        e.progress_rate
+        FROM enrollment e
+        JOIN course c ON e.course_id = c.course_id
+        WHERE e.student_id = ? AND e.progress_rate = 100
+        AND NOT EXISTS (
+        SELECT 1
+        FROM review r
+        WHERE r.course_id = c.course_id
+        AND r.student_id = e.student_id
+        )
+    </query>
+
+
+
+    <query key="review.checkExists">
+        SELECT COUNT(*)
+        FROM review
+        WHERE student_id = ? AND course_id = ?;
+    </query>
+
+    <query key="review.save">
+        INSERT INTO review (student_id, course_id, rating, created_at)
+        VALUES (?, ?, ?, now());
+    </query>
+
+    <query key="review.selectByCourseId">
+        SELECT
+        c.course_id,
+        c.title,
+        c.description,
+        c.price,
+        ROUND(IFNULL(AVG(r.rating), 0), 1) as avg_rating  FROM course c
+        LEFT JOIN review r ON c.course_id = r.course_id
+        GROUP BY c.course_id, c.title, c.description, c.price
+        ORDER BY c.course_id ASC
+    </query>
+
+</properties>

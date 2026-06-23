@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<properties>
+    <query key="users.selectAll">
+        select * from user
+    </query>
+
+    <query key="users.findNo">
+        select * from user
+        where user_no = ?
+    </query>
+
+    <query key="users.findId">
+        select user_id from user
+        where user_name = ? and user_phone_number = ?
+    </query>
+
+    <query key="users.findPassword">
+        select user_password from user
+        where user_id = ? and user_phone_number = ?
+    </query>
+
+    <query key="users.login">
+        SELECT user_no, user_id, user_password, user_role
+        FROM user
+        WHERE user_id = ? AND user_password = ? AND status = 1
+    </query>
+
+    <query key="users.insert">
+        INSERT INTO user (user_id, user_password, user_name, user_phone_number, user_role)
+        VALUES (?, ?, ?, ?, ?);
+    </query>
+
+    <query key="users.drop">
+        UPDATE `user` SET status = false
+        WHERE user_id = ? AND user_password = ? AND status = true
+    </query>
+
+
+    <query key="student.selectAll">
+        select * from student
+    </query>
+
+    <query key="student.findById">
+        select *
+        from student
+        where student_id = ?
+    </query>
+
+    <query key="user.getAmount">
+        select
+            user_price
+        from user
+        where user_no = ?
+    </query>
+    <query key="student.findId">
+        select
+            student_id
+        from student
+        where user_no = ?
+
+    </query>
+    <query key="users.findSelectUserNo">
+        select
+            *
+        from user
+        where user_no = ?
+    </query>
+
+    <query key="users.findSelectUserRole">
+        select
+        *
+        from user
+        where user_role = ?
+    </query>
+
+    <query key="student.update">
+        update user
+        set user_name = ?,
+        user_password = ?,
+        user_phone_number = ?
+        where user_no = ?
+    </query>
+    <query key="instructor.selectAll">
+        select * from instructor
+    </query>
+
+    <query key="instructor.findId">
+        select instructor_id
+        from instructor
+        where user_no = ?
+    </query>
+
+    <query key="view.student.bycourseid">
+        SELECT
+        c.course_id,
+        c.title,
+        u.user_no,
+        u.user_id,
+        u.user_name,
+        u.user_phone_number
+        FROM course c
+        JOIN enrollment e ON c.course_id = e.course_id
+        JOIN student s ON e.student_id = s.student_id
+        JOIN user u ON s.user_no = u.user_no
+        WHERE u.status = true
+        ORDER BY c.course_id;
+    </query>
+
+    <query key = "user.findInstructorByName">
+        SELECT user_no, user_id, user_password, user_name, user_phone_number, user_price, user_role, created_at, status
+        FROM user
+        WHERE user_role = 'instructor'
+        AND user_name LIKE ?;
+    </query>
+
+    <query key = "user.findAllStudents">
+        SELECT
+        user_no,
+        user_id,
+        user_password,
+        user_name,
+        user_phone_number,
+        user_price,
+        user_role,
+        created_at,
+        status
+        FROM user
+        WHERE user_role = 'student';
+    </query>
+
+    <query key = "user.updateStudentInfo">
+        UPDATE user
+        SET user_name = ?, status = ?
+        WHERE user_no = ?;
+    </query>
+    <query key="instructor.update">
+        UPDATE user
+        SET user_name, user_password, user_phone_number
+        value (?, ?, ?);
+    </query>
+    <query key = "user.updateAmount">
+        UPDATE user
+        SET user_price = user_price + ?
+        WHERE user_no = ?;
+    </query>
+
+    <query key = "findInactiveStudents">
+        select *
+        FROM user
+        WHERE status = 0
+        AND user_role = 'student';
+    </query>
+
+    <query key = "users.delete">
+        DELETE FROM user
+        WHERE user_no = ?
+        AND status = 0
+    </query>
+
+    <query key = "findAllInstructor">
+        select *
+        FROM user
+        WHERE user_role = 'instructor';
+    </query>
+
+    <query key = "user.updateInstructorInfo">
+        UPDATE user
+        SET user_name = ?, status = ?
+        WHERE user_no = ?;
+    </query>
+
+    <query key = "findInactiveInstructors">
+        select *
+        FROM user
+        WHERE status = 0
+        AND user_role = 'instructor';
+    </query>
+
+
+</properties>

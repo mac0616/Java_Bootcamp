@@ -1,0 +1,20 @@
+[제약조건]
+NOT NULL : NULL 값 허용 X
+UNIQUE : 중복 값 X
+PRIMARK KEY(PK) : 고유식별키(행을). NOT NULL + UNIQUE
+FOREIGN KEY(FK) : PK를 다른 테이블에서 사용. (값 참조) 참조 무결성 보장
+CHECK : Y or N 으로 값 지정.
+DEFAULT : 기본값 지정
+
+========================
+DA#Modeler5
+관계선
+: Optional - null 값 허용
+: Mandatory - FK로 참조
+: Identify - 복합 PK..?
+
+다대다 관계는 무조건 가운데 교차 엔티티를 둬서 해결한다.
+
+pk 값은 bigint로 설정.
+
+스크립트 생성하면 쿼리문 나오지만 완벽 X.(초안작성용). 다시 보면서 설정해야 함.

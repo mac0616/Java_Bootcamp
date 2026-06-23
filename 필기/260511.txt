@@ -1,0 +1,4 @@
+Event-Storming 을 왜 하는가?
+- Actor -> 주체
+- Command -> 명령
+지금까지는 Actor 와 Command의 구분이 명확하지 않았음. 이걸 명확하게 분리하기 위해

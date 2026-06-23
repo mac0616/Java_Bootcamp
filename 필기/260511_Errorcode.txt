@@ -1,0 +1,9 @@
+ErrorCode  인터페이스에서 get해줘야 함.
+
+ErrorCode는 enum 에서 가져옴.
+
+<AdminErrorCode> 에서 ErrorCode 상속받음. -> 이런 식으로 각자 도메인에 맞는거 만들기
+ADMIN-NOT_FOUND ~ UNAUTHORIZED 이 부분만 각자 달라짐.
+생성자(매개변수...) 동일은 동일
+
+

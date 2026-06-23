@@ -1,0 +1,9 @@
+* MySQL
+UNIQUE = 중복 허용 X
+CHECK = 값 있는지 확인하고 해당하는 값 없다면 에러 발생.
+
+* SQL 작동 순서 (면접 단골 질문)
+From - On - Join - Where - Group by - having - select - order by - limit (FOJWGHSOL)
+
+* SQL 작성 순서
+SELECT > FROM > JOIN ON > WHERE > GROUP BY > HAVING > ORDER BY > LIMIT

@@ -1,0 +1,8 @@
+presentation.api.common => 공통 응답 포맷
+
+사용자 요구(Request)
+-> Controller(Presentation 계층) 요구 받음 
+-> Service로 보내줄 Command를 만듦. (Request -> command 로 변환.)
+-> Service(Application 계층) 지시 내림 (수행 순서 정해줌)
+-> Domain이 서비스 지시 받고 비즈니스 규칙대로 수행 
+-> RepositoryAdapter(Infrastructure) 가 데이터를 DB용 Entity로 바꿔 insert 쿼리 날림.

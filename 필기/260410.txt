@@ -1,0 +1,2 @@
+put, delete 는 데이터 리턴 시에만 가능 이걸 사용하기 위해서는 (.java) @ResponseBody 필수로 필요
+받는건 @RequestBody로 받기

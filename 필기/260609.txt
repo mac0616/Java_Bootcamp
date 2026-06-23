@@ -1,0 +1,32 @@
+loki, promtail 설치 경로 : https://github.com/grafana/loki/releases 
+
+
+[loki 실행하기]
+[Intellij]-> 터미널 -> C:\env\loki-windows-amd64.exe --config.file=.\loki-config.yml
+(작성(커스텀)된 config 파일대로 하겠다. = --config.file=.\loki-config.yml)
+
+[promtail 실행하기]
+[Intellij]-> 터미널 -> C:\env\promtail-windows-amd64.exe --config.file=.\promtail-config.yml   
+
+1. Application run
+2. loki run
+3. promtail run
+이 순서를 지켜야 함.
+
+
+[grafana 실행하기]
+C:\env\grafana-13.0.2\bin 여기까지 들어와서 주소창에 cmd 입력
+-> grafana server 입력
+
+[prometheus 실행하기]
+prometheus.exe 실행
+
+=====================
+우리가 실행하는 서버
+1. app
+2. grafana
+3. prometheus
+4. loki
+5. promtail
+6. mysql
++ redis,  등등 각자 사용하는 서버들..

@@ -1,0 +1,5 @@
+filter = servlet 꺼
+intercepter = spring 꺼
+
+intercepter 는 서비스꺼는 가로 못 챔. controller 까지만 가능함.
+===========================================

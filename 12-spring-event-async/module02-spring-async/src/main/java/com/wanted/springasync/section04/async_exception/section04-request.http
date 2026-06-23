@@ -1,0 +1,7 @@
+### 비동기 예외 발생 테스트 (vi -> v1 오타 수정)
+# GET http://localhost:8080/api/v1/section04/void-exception
+
+###
+
+### 재시도 작업 생성 테스트 (잘린 파라미터 완성)
+POST http://localhost:8080/api/v1/section04/retry-jobs?userId=1&failUntilAttempt=2&maxRetryCount=3
